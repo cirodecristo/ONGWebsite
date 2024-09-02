@@ -1,0 +1,225 @@
+/* styles.css */
+
+/* General page body style */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e9ecef; /* Light grey background */
+    color: #333; /* Main text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header style */
+.header {
+    background-color: #fff; /* Header background color */
+    padding: 15px 0; /* Header padding */
+    border-bottom: 1px solid #ddd; /* Bottom border */
+}
+
+/* Navbar style */
+.navbar {
+    background-color: #2C9682; /* Set background color */
+}
+
+    .navbar .nav-link {
+        color: #fff; /* Set text color to white */
+    }
+
+        .navbar .nav-link:hover {
+            color: #dcdcdc; /* Set hover color to a lighter shade of grey */
+        }
+
+.navbar-brand .navbar-logo {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the entire image fits within the container */
+    background-color: white; /* Optional: Add background color to see the circle */
+    border: 2px solid #ddd; /* Optional: Add border to enhance the circular appearance */
+}
+
+.btn-saiba-mais {
+    font-size: 1.5rem !important;
+    padding: 15px 40px !important;
+    border-radius: 30px !important;
+    background-color: #2C9682 !important;
+    border: 2px solid #2C9682 !important;
+    color: #fff !important;
+    transition: background-color 0.3s ease, border-color 0.3s ease !important;
+    text-decoration: none !important; /* Remova a decoração de texto padrão */
+    display: inline-block !important; /* Garante que o botão ocupe apenas o espaço necessário */
+    text-align: center !important; /* Centraliza o texto dentro do botão */
+}
+
+    .btn-saiba-mais:hover {
+        background-color: #2C9682;
+        border-color: #2C9682;
+    }
+
+.btn-saiba-mais:focus {
+    outline: none; /* Remove o contorno padrão ao focar */
+    box-shadow: 0 0 0 3px rgba(44, 150, 130, 0.5);
+}
+
+/* Estilo para o botão "Saiba Mais" */
+.btn-saiba-mais-2 {
+    font-size: 1.0rem !important;
+    padding: 5px 40px !important;
+    border-radius: 30px !important;
+    background-color: #2C9682 !important;
+    border: 2px solid #2C9682 !important;
+    color: #fff !important;
+    transition: background-color 0.3s ease, border-color 0.3s ease !important;
+    text-decoration: none !important; /* Remova a decoração de texto padrão */
+    display: inline-block !important; /* Garante que o botão ocupe apenas o espaço necessário */
+    text-align: center !important; /* Centraliza o texto dentro do botão */
+}
+
+    /* Estilo para alterar a cor da borda e do texto ao passar o mouse */
+    .btn-saiba-mais-2:hover {
+        background-color: #23816F; /* Cor de fundo verde-azulado mais escura no hover */
+        border-color: #23816F; /* Borda verde-azulado mais escura no hover */
+        color: #fff; /* Cor do texto branca no hover */
+    }
+
+
+
+
+
+
+/* Hero section style */
+.hero {
+    /* Mantenha as configurações anteriores */
+    padding: 120px 20px; /* Aumenta o padding para mais espaço interno */
+}
+
+    .hero h1 {
+        font-size: 4rem; /* Tamanho maior de título */
+        margin-bottom: 30px; /* Espaço maior abaixo do título */
+    }
+
+    .hero p {
+        font-size: 1.8rem; /* Tamanho maior de texto */
+        margin-bottom: 40px; /* Espaço maior abaixo do texto */
+    }
+
+
+    .hero .hero-img {
+        max-width: 100%; /* Full width image */
+        height: auto; /* Auto height */
+        border-radius: 15px; /* Rounded corners */
+    }
+
+/* Mission section style */
+.mission {
+    background-color: #fff; /* Background color */
+    padding: 80px 0; /* Top and bottom padding */
+    border-radius: 15px; /* Rounded corners */
+    margin: 20px; /* Vertical margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+    .mission h2 {
+        font-size: 2.5rem; /* Title font size */
+        margin-bottom: 20px; /* Bottom margin */
+    }
+
+/* Impact section style */
+.impact {
+    background-color: #f8f9fa; /* Background color */
+    padding: 80px 0; /* Top and bottom padding */
+    border-radius: 15px; /* Rounded corners */
+    margin: 20px; /* Vertical margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+    .impact h2 {
+        font-size: 2.5rem; /* Title font size */
+        margin-bottom: 20px; /* Bottom margin */
+    }
+
+    .impact p.text-right {
+        text-align: right; /* Right align text */
+    }
+
+/* Background image for Nosso Impacto section */
+.impact-bg {
+    background-image: url('/images/bannerDog.jpg'); /* Caminho relativo à raiz do projeto */
+    background-size: cover; /* Ensure the image covers the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    padding: 20px; /* Add some padding if needed */
+    color: #fff; /* Ensure the text is readable */
+    position: relative; /* Position relative for z-index control */
+    z-index: 1; /* Ensure it stays on top */
+    border-radius: 15px; /* Match the rounded corners of the section */
+}
+
+    .impact-bg::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Add a dark overlay for readability */
+        z-index: -1; /* Place it behind the content */
+        border-radius: 15px; /* Match the rounded corners of the section */
+    }
+
+
+/* Social Media Section */
+.social-media {
+    background-color: #2C9682; /* Cor de fundo */
+    padding: 60px 0; /* Espaçamento interno */
+    color: #fff; /* Cor do texto */
+}
+
+    .social-media h2 {
+        font-size: 2.5rem; /* Tamanho da fonte do título */
+        margin-bottom: 20px; /* Margem abaixo do título */
+    }
+
+.social-icons {
+    display: flex; /* Flexbox para alinhar os ícones */
+    justify-content: center; /* Centralizar ícones horizontalmente */
+    gap: 20px; /* Espaçamento entre ícones */
+}
+
+.social-icon {
+    width: 48px; /* Largura dos ícones */
+    height: 48px; /* Altura dos ícones */
+    transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+    .social-icon:hover {
+        transform: scale(1.1); /* Aumentar ícone ao passar o mouse */
+    }
+
+
+/* Partners section style */
+.partners {
+    background-color: #fff; /* Background color */
+    padding: 80px 0; /* Top and bottom padding */
+    border-radius: 15px; /* Rounded corners */
+    margin: 20px; /* Vertical margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+    .partners h2 {
+        font-size: 2.5rem; /* Title font size */
+        margin-bottom: 20px; /* Bottom margin */
+    }
+
+    .partners img {
+        border-radius: 50%; /* Circular images */
+        margin-bottom: 20px; /* Bottom margin */
+    }
+
+/* Footer style */
+.footer {
+    background-color: #343a40; /* Footer background color */
+    color: #fff; /* Footer text color */
+    padding: 20px 0; /* Footer padding */
+    text-align: center; /* Center text */
+}

@@ -1,0 +1,123 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/styles.css">
+    <!-- Bootstrap CSS (optional, if using) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="~/images/logo.jpg" alt="Logo" class="navbar-logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Animais para adoção</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Como Posso Ajudar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perguntas Frequentes (FAQ)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Bem-vindo à nossa ONG!</h1>
+                    <p class="lead">Seja você o salvador de um animalzinho e torne o mundo um lugar melhor.</p>
+                    <a href="/about" class="btn btn-saiba-mais">Adote hoje mesmo!</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="~/images/hero-image.jpg" class="img-fluid hero-img" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="impact">
+        <div class="container impact-bg">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Nosso Impacto</h2>
+                    <p>Com dedicação, salvamos e reabilitamos mais de 500 animais em Pinhais, proporcionando-lhes novos lares.</p>
+                    <a href="/about" class="btn btn-saiba-mais-2 d-block mx-auto">Saiba mais</a>
+                </div>
+                <div class="col-md-4">
+                    <h2>Nossa Missão</h2>
+                    <p>Nossa missão é conectar animais abandonados a donos que buscam cuidar com muito carinho e amor</p>
+                    <a href="/about" class="btn btn-saiba-mais-2 d-block mx-auto">Saiba mais</a>
+                </div>
+                <div class="col-md-4">
+                    <h2>Onde estamos</h2>
+                    <p>Moramos em Pinhais, recebos animais em nossas casas ou abrigos pagos. Seja você um lar temporário</p>
+                    <a href="/about" class="btn btn-saiba-mais-2 d-block mx-auto">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="social-media">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Nos siga nas redes sociais</h2>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/PatinhasPinhais.PR" target="_blank">
+                            <img src="~/images/facebook.png" alt="Facebook" class="social-icon">
+                        </a>
+                        <a href="https://www.instagram.com/patinhaspinhaispr/" target="_blank">
+                            <img src="~/images/instagram.png" alt="Instagram" class="social-icon">
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=5541999684990&text=Ol%C3%A1%21&type=phone_number&app_absent=0" target="_blank">
+                            <img src="~/images/whatsapp.png" alt="Whatsapp" class="social-icon">
+                        </a>
+                        <!-- Adicione mais ícones conforme necessário -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 - ONGWebsite - <a href="#">Privacy</a></p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS (optional, if using) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

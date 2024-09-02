@@ -1,0 +1,30 @@
+﻿@page
+@model ONGWebsite.Pages.IndexModel
+@{
+    ViewData["Title"] = "Homepage";
+}
+
+<div class="jumbotron">
+    <h1>Bem-vindo à nossa ONG!</h1>
+    <p class="lead">Nossa missão é aumentar a visibilidade e engajamento da comunidade local e além.</p>
+    <p>Explore nossas atividades, eventos e histórias de sucesso para saber mais sobre nosso trabalho.</p>
+    <a href="/About" class="btn btn-primary">Saiba Mais</a>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Atividades</h2>
+        <p>Descubra nossas atividades e como você pode se envolver.</p>
+        <a href="/Activities" class="btn btn-secondary">Ver mais</a>
+    </div>
+    <div class="col-md-4">
+        <h2>Eventos</h2>
+        <p>Fique por dentro dos nossos eventos e participe conosco.</p>
+        <a href="/Events" class="btn btn-secondary">Ver mais</a>
+    </div>
+    <div class="col-md-4">
+        <h2>Histórias de Sucesso</h2>
+        <p>Leia histórias inspiradoras de nosso impacto na comunidade.</p>
+        <a href="/SuccessStories" class="btn btn-secondary">Ver mais</a>
+    </div>
+</div>
